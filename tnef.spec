@@ -50,8 +50,10 @@ TNEF - це програма для розпаковки атачмент╕в MIME типу
 %setup -q
 
 %build
+rm -f missing
 %{__aclocal}
 %{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
