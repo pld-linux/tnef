@@ -54,6 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,BUGS,ChangeLog,NEWS,TODO}.gz doc/file-format.tex
-%doc tests/*.tnef
+%doc *.gz doc/file-format.tex tests/*.tnef
 %attr(755,root,root) %{_bindir}/tnef
