@@ -38,7 +38,7 @@ Microsoft Outlook do odczytania za³±cznika.
 %setup -q
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 %{__make}
