@@ -5,7 +5,7 @@ Version:	1.2.0
 Release:	1
 License:	GPL
 Group:		Applications/Mail
-Source0:	http://prdownloads.sourceforge.net/tnef/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/tnef/%{name}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/tnef/
 BuildRequires:	autoconf
 BuildRequires:	automake
