@@ -39,7 +39,7 @@ Microsoft Outlook do odczytania za³±cznika.
 
 %build
 aclocal
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
