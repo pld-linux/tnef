@@ -1,8 +1,8 @@
 Summary:	Decodes MS-TNEF attachments
 Summary(pl):	Dekoder za³±czników w formacie MS-TNEF
 Name:		tnef
-Version:	0.15
-Release:	2
+Version:	0.16
+Release:	1
 License:	GPL
 Group:		Applications
 Group(de):	Applikationen
