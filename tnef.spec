@@ -1,5 +1,7 @@
 Summary:	Decodes MS-TNEF attachments
 Summary(pl):	Dekoder zaЁ╠cznikСw w formacie MS-TNEF
+Summary(ru):	Программа для распаковки аттачментов MIME типа "application/ms-tnef"
+Summary(uk):	Програма для розпаковки атачмент╕в MIME типу "application/ms-tnef"
 Name:		tnef
 Version:	1.2.1
 Release:	1
@@ -33,6 +35,15 @@ Microsoft Exchange coraz wiЙcej przesyЁek korzysta z niego.
 Program TNEF umo©liwia rozpakowanie zaЁ╠cznikСw opakowanych w
 zaЁ╠cznik TNEF. Powoduje to, ©e nie jest konieczne u©ycie programu
 Microsoft Outlook do odczytania zaЁ╠cznika.
+
+%description -l ru
+TNEF - это программа для распаковки аттачментов MIME типа
+"application/ms-tnef". Этот тип используется исключительно
+Microsoft'ом.
+
+%description -l uk
+TNEF - це програма для розпаковки атачмент╕в MIME типу
+"application/ms-tnef". Цей тип використову╓ться виключно Microsoft'ом.
 
 %prep
 %setup -q
