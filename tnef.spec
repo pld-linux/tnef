@@ -1,12 +1,12 @@
 Summary:	Decodes MS-TNEF attachments
 Summary(pl):	Dekoder za³±czników w formacie MS-TNEF
 Name:		tnef
-Version:	1.1.2
+Version:	1.2.0
 Release:	1
 License:	GPL
 Group:		Applications/Mail
-Source0:	http://world.std.com/~damned/%{name}-%{version}.tar.gz
-URL:		http://world.std.com/~damned/software.html
+Source0:	http://prdownloads.sourceforge.net/tnef/%{name}-%{version}.tar.gz
+URL:		http://sourceforge.net/projects/tnef/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
