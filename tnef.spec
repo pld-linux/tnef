@@ -1,5 +1,5 @@
-Summary:	Decodes MS-TNEF attachments.
-Summary(pl):	Dekoder za³±czników w formacie MS-TNEF.
+Summary:	Decodes MS-TNEF attachments
+Summary(pl):	Dekoder za³±czników w formacie MS-TNEF
 Name:		tnef
 Version:	0.15
 Release:	2
@@ -36,13 +36,14 @@ Microsoft Outlook do odczytania za³±cznika.
 
 %prep
 %setup -q
+
 %build
 %configure
-
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -55,5 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,BUGS,ChangeLog,NEWS,TODO}.gz doc/file-format.tex
 %doc tests/*.tnef
-
 %attr(755,root,root) %{_bindir}/tnef
