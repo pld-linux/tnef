@@ -1,35 +1,59 @@
-Summary: Decodes MS-TNEF attachments.
-
-Name: tnef
-Version: 0.15
-Release: 1
-Group: Mail/Encoders
-Copyright: GPL
-Source: http://world.std.com/~damned/tnef-%{version}.tar.gz
+Summary:	Decodes MS-TNEF attachments.
+Summary(pl):	Dekoder za³±czników w formacie MS-TNEF.
+Name:		tnef
+Version:	0.15
+Release:	2
+License:	GPL
+Group:		Applications
+Group(de):	Applikationen
+Group(pl):	Aplikacje
+Source0:	http://world.std.com/~damned/%{name}-%{version}.tar.gz
+URL:		http://world.std.com/~damned/software.html
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 TNEF is a program for unpacking MIME attachments of type
 "application/ms-tnef". This is a Microsoft only attachment.
 
-Due to the proliferation of Microsoft Outlook and Exchange mail servers,
-more and more mail is encapsulated into this format.
+Due to the proliferation of Microsoft Outlook and Exchange mail
+servers, more and more mail is encapsulated into this format.
 
 The TNEF program allows one to unpack the attachments which were
-encapsulated into teh TNEF attachment.  Thus alleviating the need to use
-Microsoft Outlook to view the attachment.
+encapsulated into teh TNEF attachment. Thus alleviating the need to
+use Microsoft Outlook to view the attachment.
+
+%description -l pl
+TNEF jest programem rozpakowuj±cym za³±czniki MIME w formacie
+"application/ms-tnef". S± to za³±czniki specyficzne dla firmy
+Microsoft.
+
+Poniewa¿ jest to format stosowany przez programy Microsoft Outlook i
+Microsoft Exchange coraz wiecej przesylek korzysta z niego.
+
+Program TNEF umo¿liwia rozpakowanie za³±czników opakowanych w
+za³±cznik TNEF. Powoduje to, ¿e nie jest konieczne u¿ycie programu
+Microsoft Outlook do odczytania za³±cznika.
 
 %prep
-%setup
-
+%setup -q
 %build
-./configure --prefix=/usr/local
-make
+%configure
+
+%{__make}
 
 %install
-make install
+rm -rf $RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
+gzip -9nf README BUGS ChangeLog NEWS TODO
+	
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-/usr/local/bin/tnef
+%defattr(644,root,root,755)
+%doc {README,BUGS,ChangeLog,NEWS,TODO}.gz doc/file-format.tex
+%doc tests/*.tnef
+
+%attr(755,root,root) %{_bindir}/tnef
