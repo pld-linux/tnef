@@ -10,6 +10,8 @@ Group(pl):	Aplikacje/Poczta
 Group(pt):	Aplicações/Correio Eletrônico
 Source0:	http://world.std.com/~damned/%{name}-%{version}.tar.gz
 URL:		http://world.std.com/~damned/software.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,7 +31,7 @@ TNEF jest programem rozpakowuj±cym za³±czniki MIME w formacie
 Microsoft.
 
 Poniewa¿ jest to format stosowany przez programy Microsoft Outlook i
-Microsoft Exchange coraz wiecej przesylek korzysta z niego.
+Microsoft Exchange coraz wiêcej przesy³ek korzysta z niego.
 
 Program TNEF umo¿liwia rozpakowanie za³±czników opakowanych w
 za³±cznik TNEF. Powoduje to, ¿e nie jest konieczne u¿ycie programu
