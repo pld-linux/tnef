@@ -1,8 +1,8 @@
 Summary:	Decodes MS-TNEF attachments
 Summary(pl):	Dekoder za³±czników w formacie MS-TNEF
 Name:		tnef
-Version:	1.1.1
-Release:	2
+Version:	1.1.2
+Release:	1
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://world.std.com/~damned/%{name}-%{version}.tar.gz
@@ -49,12 +49,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README BUGS ChangeLog NEWS TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/file-format.tex tests/*.tnef
+%doc README BUGS ChangeLog NEWS TODO
 %attr(755,root,root) %{_bindir}/tnef
+%{_mandir}/man1/*
