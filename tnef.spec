@@ -5,11 +5,6 @@ Version:	1.1.1
 Release:	2
 License:	GPL
 Group:		Applications/Mail
-Group(de):	Applikationen/Post
-Group(es):	Aplicaciones/Correo Electrónico
-Group(fr):	Applications/Courrier
-Group(pl):	Aplikacje/Poczta
-Group(pt):	Aplicações/Correio Eletrônico
 Source0:	http://world.std.com/~damned/%{name}-%{version}.tar.gz
 URL:		http://world.std.com/~damned/software.html
 BuildRequires:	autoconf
