@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README BUGS ChangeLog NEWS TODO
-	
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
