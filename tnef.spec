@@ -2,11 +2,12 @@ Summary:	Decodes MS-TNEF attachments
 Summary(pl):	Dekoder za³±czników w formacie MS-TNEF
 Name:		tnef
 Version:	0.16
-Release:	1
+Release:	2
 License:	GPL
-Group:		Applications
-Group(de):	Applikationen
-Group(pl):	Aplikacje
+Group:		Applications/Mail
+Group(de):	Applikationen/Post
+Group(pl):	Aplikacje/Poczta
+Group(pt):	Aplicações/Correio Eletrônico
 Source0:	http://world.std.com/~damned/%{name}-%{version}.tar.gz
 URL:		http://world.std.com/~damned/software.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,6 +39,8 @@ Microsoft Outlook do odczytania za³±cznika.
 %setup -q
 
 %build
+aclocal
+autoconf
 %configure
 %{__make}
 
