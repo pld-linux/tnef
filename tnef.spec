@@ -1,7 +1,7 @@
 Summary:	Decodes MS-TNEF attachments
-Summary(pl.UTF-8):   Dekoder załączników w formacie MS-TNEF
-Summary(ru.UTF-8):   Программа для распаковки аттачментов MIME типа "application/ms-tnef"
-Summary(uk.UTF-8):   Програма для розпаковки атачментів MIME типу "application/ms-tnef"
+Summary(pl.UTF-8):	Dekoder załączników w formacie MS-TNEF
+Summary(ru.UTF-8):	Программа для распаковки аттачментов MIME типа "application/ms-tnef"
+Summary(uk.UTF-8):	Програма для розпаковки атачментів MIME типу "application/ms-tnef"
 Name:		tnef
 Version:	1.4.3
 Release:	1
