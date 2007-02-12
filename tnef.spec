@@ -1,7 +1,7 @@
 Summary:	Decodes MS-TNEF attachments
-Summary(pl):	Dekoder zaЁ╠cznikСw w formacie MS-TNEF
-Summary(ru):	Программа для распаковки аттачментов MIME типа "application/ms-tnef"
-Summary(uk):	Програма для розпаковки атачмент╕в MIME типу "application/ms-tnef"
+Summary(pl.UTF-8):   Dekoder zaе┌д┘cznikцЁw w formacie MS-TNEF
+Summary(ru.UTF-8):   п÷я─п╬пЁя─п╟п╪п╪п╟ п╢п╩я▐ я─п╟я│п©п╟п╨п╬п╡п╨п╦ п╟я┌я┌п╟я┤п╪п╣п╫я┌п╬п╡ MIME я┌п╦п©п╟ "application/ms-tnef"
+Summary(uk.UTF-8):   п÷я─п╬пЁя─п╟п╪п╟ п╢п╩я▐ я─п╬п╥п©п╟п╨п╬п╡п╨п╦ п╟я┌п╟я┤п╪п╣п╫я┌я√п╡ MIME я┌п╦п©я┐ "application/ms-tnef"
 Name:		tnef
 Version:	1.4.3
 Release:	1
@@ -25,26 +25,26 @@ The TNEF program allows one to unpack the attachments which were
 encapsulated into teh TNEF attachment. Thus alleviating the need to
 use Microsoft Outlook to view the attachment.
 
-%description -l pl
-TNEF jest programem rozpakowuj╠cym zaЁ╠czniki MIME w formacie
-"application/ms-tnef". S╠ to zaЁ╠czniki specyficzne dla firmy
+%description -l pl.UTF-8
+TNEF jest programem rozpakowujд┘cym zaе┌д┘czniki MIME w formacie
+"application/ms-tnef". Sд┘ to zaе┌д┘czniki specyficzne dla firmy
 Microsoft.
 
-Poniewa© jest to format stosowany przez programy Microsoft Outlook i
-Microsoft Exchange coraz wiЙcej przesyЁek korzysta z niego.
+Poniewaе╪ jest to format stosowany przez programy Microsoft Outlook i
+Microsoft Exchange coraz wiд≥cej przesyе┌ek korzysta z niego.
 
-Program TNEF umo©liwia rozpakowanie zaЁ╠cznikСw opakowanych w
-zaЁ╠cznik TNEF. Powoduje to, ©e nie jest konieczne u©ycie programu
-Microsoft Outlook do odczytania zaЁ╠cznika.
+Program TNEF umoе╪liwia rozpakowanie zaе┌д┘cznikцЁw opakowanych w
+zaе┌д┘cznik TNEF. Powoduje to, е╪e nie jest konieczne uе╪ycie programu
+Microsoft Outlook do odczytania zaе┌д┘cznika.
 
-%description -l ru
-TNEF - это программа для распаковки аттачментов MIME типа
-"application/ms-tnef". Этот тип используется исключительно
-Microsoft'ом.
+%description -l ru.UTF-8
+TNEF - я█я┌п╬ п©я─п╬пЁя─п╟п╪п╪п╟ п╢п╩я▐ я─п╟я│п©п╟п╨п╬п╡п╨п╦ п╟я┌я┌п╟я┤п╪п╣п╫я┌п╬п╡ MIME я┌п╦п©п╟
+"application/ms-tnef". п╜я┌п╬я┌ я┌п╦п© п╦я│п©п╬п╩я▄п╥я┐п╣я┌я│я▐ п╦я│п╨п╩я▌я┤п╦я┌п╣п╩я▄п╫п╬
+Microsoft'п╬п╪.
 
-%description -l uk
-TNEF - це програма для розпаковки атачмент╕в MIME типу
-"application/ms-tnef". Цей тип використову╓ться виключно Microsoft'ом.
+%description -l uk.UTF-8
+TNEF - я├п╣ п©я─п╬пЁя─п╟п╪п╟ п╢п╩я▐ я─п╬п╥п©п╟п╨п╬п╡п╨п╦ п╟я┌п╟я┤п╪п╣п╫я┌я√п╡ MIME я┌п╦п©я┐
+"application/ms-tnef". п╕п╣п╧ я┌п╦п© п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐я■я┌я▄я│я▐ п╡п╦п╨п╩я▌я┤п╫п╬ Microsoft'п╬п╪.
 
 %prep
 %setup -q
