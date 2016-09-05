@@ -3,12 +3,12 @@ Summary(pl.UTF-8):	Dekoder załączników w formacie MS-TNEF
 Summary(ru.UTF-8):	Программа для распаковки аттачментов MIME типа "application/ms-tnef"
 Summary(uk.UTF-8):	Програма для розпаковки атачментів MIME типу "application/ms-tnef"
 Name:		tnef
-Version:	1.4.8
+Version:	1.4.12
 Release:	1
 License:	GPL v2+
 Group:		Applications/Mail
 Source0:	http://downloads.sourceforge.net/tnef/%{name}-%{version}.tar.gz
-# Source0-md5:	cc6443ac5f30913394c0c16ae7941e4f
+# Source0-md5:	92b27d6ff4374fea28b04e38032c7710
 URL:		http://sourceforge.net/projects/tnef/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
@@ -68,6 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS BUGS ChangeLog NEWS README THANKS TODO
+%doc AUTHORS BUGS ChangeLog NEWS README.md THANKS doc/{FAQ,file-format.tex}
 %attr(755,root,root) %{_bindir}/tnef
 %{_mandir}/man1/tnef.1*
