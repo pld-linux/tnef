@@ -1,0 +1,16 @@
+attr_read() is called with a FILE* argument, but declared as taking none.
+GCC 14 rejects the mismatch in attr.c as an error.
+
+Upstream commit 86bfa75cfacbe71c8d5282fa0065981b4544c5ad
+https://github.com/verdammelt/tnef/commit/86bfa75cfacbe71c8d5282fa0065981b4544c5ad
+
+--- a/src/attr.h
++++ b/src/attr.h
+@@ -69,6 +69,6 @@
+ extern void attr_dump (Attr* attr);
+ extern void attr_free (Attr* attr);
+ extern void copy_date_from_attr (Attr* attr, struct date* dt);
+-extern Attr* attr_read ();
++extern Attr* attr_read (FILE* in);
+ 
+ #endif /* ATTR_H */
